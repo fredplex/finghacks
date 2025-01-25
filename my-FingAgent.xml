@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>FingAgent</Name>
+  <Repository>fing/fing-agent:latest</Repository>
+  <Registry>https://hub.docker.com/r/fing/fing-agent</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://app.fing.com/images/AppIcon76x76@2x.png</Icon>
+  <ExtraParams> --cap-add=NET_ADMIN</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1737817596</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Fing Add Data" Target="/app/fingdata" Default="/mnt/user/appdata/fingagent" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/fingagent</Config>
+  <Config Name="Publish Port" Target="44444" Default="44444" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">44444</Config>
+  <TailscaleStateDir/>
+</Container>
